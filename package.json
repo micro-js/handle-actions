@@ -2,7 +2,7 @@
   "name": "@micro-js/handle-actions",
   "description": "Compose a reducer from a map of action handlers",
   "repository": "git://github.com/micro-js/handle-actions.git",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {

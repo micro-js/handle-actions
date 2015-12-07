@@ -6,7 +6,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Code style][standard-image]][standard-url]
 
-Compose a reducer from a map of action handlers.  Identical to handleActions in [https://github.com/acdlite/redux-actions](redux-actions), but broken out as its own separate micro-module.
+Compose a reducer from a map of action handlers.  Very similar to handleActions in [https://github.com/acdlite/redux-actions](redux-actions), but broken out as its own separate micro-module, and it also passes your handlers only `action.payload`.  Note, this obviously assumes that you are using the flux standard action style, of `type` for the identifier and `payload` for the contents of your message. This means your reducers will be unable to examine any other fields (e.g. meta) - if you want to use other fields, don't use this module.
 
 ## Installation
 
@@ -18,11 +18,11 @@ Compose a reducer from a map of action handlers.  Identical to handleActions in 
 var handleActions = require('@micro-js/handle-actions')
 
 handleActions({
-  UPDATE_ITEM: (state, action) {
+  UPDATE_ITEM: (state, changes) {
     // action.type === 'UPDATE_ITEM'
     return {
       ...state,
-      ...action.item
+      ...changes
     }
   }
 })

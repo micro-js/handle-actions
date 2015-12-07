@@ -31,9 +31,10 @@ handleActions({
 
 ## API
 
-### handleActions(map)
+### handleActions(map, defaultState)
 
 - `map` - Map of action types to handlers.
+- `defaultState` - Optional default state. This is returned if `state` is undefined.
 
 **Returns:** A composite reducer of the reducers in your map, scoped to their specified actions.
 

@@ -10,12 +10,12 @@ Compose a reducer from a map of action handlers.  Very similar to handleActions 
 
 ## Installation
 
-    $ npm install @micro-js/handle-actions
+    $ npm install @f/handle-actions
 
 ## Usage
 
 ```js
-var handleActions = require('@micro-js/handle-actions')
+var handleActions = require('@f/handle-actions')
 
 handleActions({
   UPDATE_ITEM: (state, changes) {
@@ -48,5 +48,5 @@ MIT
 [git-url]: https://github.com/micro-js/handle-actions
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
 [standard-url]: https://github.com/feross/standard
-[npm-image]: https://img.shields.io/npm/v/@micro-js/handle-actions.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@micro-js/handle-actions
+[npm-image]: https://img.shields.io/npm/v/@f/handle-actions.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@f/handle-actions
